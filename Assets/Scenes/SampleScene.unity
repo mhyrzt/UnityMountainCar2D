@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &37000108 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8158648888488512221, guid: e3f2e94d7ee07bc44b445b45dea6e060, type: 3}
+  m_PrefabInstance: {fileID: 226839838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &226839838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -210,11 +215,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4283848108862104594, guid: e3f2e94d7ee07bc44b445b45dea6e060, type: 3}
   m_PrefabInstance: {fileID: 226839838}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &470094740 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3792999854906807704, guid: e3f2e94d7ee07bc44b445b45dea6e060, type: 3}
-  m_PrefabInstance: {fileID: 226839838}
-  m_PrefabAsset: {fileID: 0}
 --- !u!65 &470094741
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -286,10 +286,18 @@ PrefabInstance:
     - target: {fileID: 8763491981165349015, guid: 5227be05320fb7f418571f259401f885, type: 3}
       propertyPath: goal
       value: 
-      objectReference: {fileID: 470094740}
+      objectReference: {fileID: 37000108}
     - target: {fileID: 8763491981165349015, guid: 5227be05320fb7f418571f259401f885, type: 3}
       propertyPath: speed
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763491981165349015, guid: 5227be05320fb7f418571f259401f885, type: 3}
+      propertyPath: MaxStep
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763491981165349015, guid: 5227be05320fb7f418571f259401f885, type: 3}
+      propertyPath: carTorque
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5227be05320fb7f418571f259401f885, type: 3}
