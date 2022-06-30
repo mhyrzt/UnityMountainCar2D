@@ -7,13 +7,13 @@ using Unity.MLAgents.Sensors;
 
 public class CarAgent : Agent
 {
+    private Rigidbody2D carRigidBody;
+    private Vector3 position;
     [SerializeField] private Rigidbody2D backTire;
+    [SerializeField] private Transform goal;
     [SerializeField] private Rigidbody2D frontTire;
     [SerializeField] private float speed = 75.0F;
     [SerializeField] private float carTorque = 10.0F;
-    [SerializeField] private Transform goal;
-    private Rigidbody2D carRigidBody;
-    private Vector3 position;
 
     void Start()
     {
@@ -33,13 +33,13 @@ public class CarAgent : Agent
 
         this.backTire.angularVelocity = 0F;
         this.backTire.velocity = Vector2.zero;
-
     }
+
 
     public override void CollectObservations(VectorSensor sensor)
     {
         sensor.AddObservation(this.transform.position.x);
-        sensor.AddObservation(this.carRigidBody.velocity.x);
+        sensor.AddObservation(this.carRigidBody.velocity.magnitude);
     }
 
     public override void OnActionReceived(ActionBuffers actions)
@@ -50,12 +50,6 @@ public class CarAgent : Agent
         {
             EndEpisode();
         }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        SetReward(-1);
-        EndEpisode();
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -71,6 +65,7 @@ public class CarAgent : Agent
         this.frontTire.AddTorque(direction * this.speed * Time.deltaTime);
         this.carRigidBody.AddTorque(direction * this.carTorque * Time.deltaTime);
     }
+
     private void AddTorque(ActionBuffers actions)
     {
         this.AddTorque(this.GetDirection(actions));
