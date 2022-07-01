@@ -22,7 +22,7 @@ while not done:
     state, reward, done, _ = env.step(action)
 
 ```
-https://github.com/mhyrzt/UnityMountainCar2D/blob/main/video.mp4?raw=true
+video.mp4
 
 ## Notes
 
