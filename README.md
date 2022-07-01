@@ -22,7 +22,10 @@ while not done:
     state, reward, done, _ = env.step(action)
 
 ```
-https://github.com/mhyrzt/UnityMountainCar2D/blob/main/video.mp4
+<video autoplay controls>
+    <source src="https://github.com/mhyrzt/UnityMountainCar2D/blob/main/video.mp4?raw=true" type="video/mp4" />    
+</video>
+
 ## Notes
 
 - make sure you check the __"Development Build"__ in the build setting.
