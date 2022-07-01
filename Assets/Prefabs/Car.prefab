@@ -512,7 +512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 1
+    VectorObservationSize: 2
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 0
@@ -544,12 +544,12 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 200
+  MaxStep: 0
   backTire: {fileID: 3217489485088916074}
-  frontTire: {fileID: 785880865697471213}
-  speed: 75
-  carTorque: 20
   goal: {fileID: 0}
+  frontTire: {fileID: 785880865697471213}
+  speed: 100
+  carTorque: 10
 --- !u!114 &3838466006404168862
 MonoBehaviour:
   m_ObjectHideFlags: 0

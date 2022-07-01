@@ -283,25 +283,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car
       objectReference: {fileID: 0}
-    - target: {fileID: 3654660516156353148, guid: 5227be05320fb7f418571f259401f885, type: 3}
-      propertyPath: m_BrainParameters.VectorObservationSize
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8763491981165349015, guid: 5227be05320fb7f418571f259401f885, type: 3}
       propertyPath: goal
       value: 
       objectReference: {fileID: 37000108}
-    - target: {fileID: 8763491981165349015, guid: 5227be05320fb7f418571f259401f885, type: 3}
-      propertyPath: speed
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8763491981165349015, guid: 5227be05320fb7f418571f259401f885, type: 3}
-      propertyPath: MaxStep
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 8763491981165349015, guid: 5227be05320fb7f418571f259401f885, type: 3}
-      propertyPath: carTorque
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5227be05320fb7f418571f259401f885, type: 3}
