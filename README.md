@@ -22,7 +22,7 @@ while not done:
     state, reward, done, _ = env.step(action)
 
 ```
-[video.mp4](https://github.com/mhyrzt/UnityMountainCar2D/blob/main/video.mp4?raw=true)
+https://github.com/mhyrzt/UnityMountainCar2D/blob/main/video.mp4
 ## Notes
 
 - make sure you check the __"Development Build"__ in the build setting.
