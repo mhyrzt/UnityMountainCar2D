@@ -23,7 +23,7 @@ while not done:
 
 ```
 
-![video_example](video.mp4)
+![video_example](https://github.com/mhyrzt/UnityMountainCar2D/blob/main/video.mp4?raw=true)
 
 ## Notes
 
